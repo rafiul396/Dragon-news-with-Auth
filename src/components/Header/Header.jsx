@@ -11,7 +11,7 @@ const Header = () => {
                 <img src={logo} alt="" />
                 <p className='text-accent text-xl'>Journalism Without Fear or Favour</p>
                 <p className='text-warning font-semibold text-xl'>
-                    <span className='text-primary'>{format(new Date(), "EEEE")},</span> {format(new Date(), "MMMM MM, yyyy")}
+                    <span className='text-primary'>{format(new Date(), "EEEE")},</span> {format(new Date(), "MMMM dd, yyyy")}
                 </p>
             </div>
             <section>
