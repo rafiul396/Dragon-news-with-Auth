@@ -4,9 +4,8 @@ import Categorynews from './Categorynews';
 
 const Content = () => {
     return (
-        <section className='col-span-6'>
+        
             <Categorynews />
-        </section>
     );
 };
 

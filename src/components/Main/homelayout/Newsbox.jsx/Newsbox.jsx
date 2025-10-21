@@ -4,7 +4,7 @@ import star from '../../../../assets/star.png'
 import { FaEye } from 'react-icons/fa';
 
 const nbox = ({ n }) => {
-    const {author} = n;
+    const { author } = n;
     console.log(n);
     const date = new Date(n.author.published_date).toLocaleDateString()
     return (
@@ -36,11 +36,11 @@ const nbox = ({ n }) => {
                 <div className='flex justify-between items-center pb-5'>
                     <div className='flex gap-4 items-center'>
                         <div className='flex gap-1'>
-                            <img className='w-[20px] h-[20px]' src={star} alt="" />
-                            <img className='w-[20px] h-[20px]' src={star} alt="" />
-                            <img className='w-[20px] h-[20px]' src={star} alt="" />
-                            <img className='w-[20px] h-[20px]' src={star} alt="" />
-                            <img className='w-[20px] h-[20px]' src={star} alt="" />
+                            <div className='flex gap-1'>
+                                {[...Array(Math.round(n.rating.number))].map((_, i) => (
+                                    <img key={i} className='w-[20px] h-[20px]' src={star} alt="star" />
+                                ))}
+                            </div>
                         </div>
                         <p>{n.rating.number}</p>
                     </div>

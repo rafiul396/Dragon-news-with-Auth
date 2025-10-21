@@ -6,7 +6,7 @@ import Latest from '../Latest';
 
 const Header = () => {
     return (
-        <header>
+        <>
             <div className='flex flex-col items-center gap-4 pt-8'>
                 <img src={logo} alt="" />
                 <p className='text-accent text-xl'>Journalism Without Fear or Favour</p>
@@ -18,7 +18,7 @@ const Header = () => {
                 <Latest />
             </section>
             <Navbar />
-        </header>
+        </>
     );
 };
 

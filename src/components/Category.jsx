@@ -10,7 +10,7 @@ const Category = () => {
     return (
         <div className='grid grid-cols-1'>
                 {
-                categories.map(cate => <NavLink key={cate.id} className="btn bg-base-100 border-0 hover:bg-base-200 hover:text-primary text-accent" to={`/category/${cate.id}`}>{cate.name}</NavLink>)
+                categories.map(cate => <NavLink key={cate.id} className="btn bg-base-100 border-0 hover:bg-base-200 hover:text-primary text-accent" to={`/news/${cate.id}`}>{cate.name}</NavLink>)
             }
         </div>
     );

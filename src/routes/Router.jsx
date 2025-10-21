@@ -5,6 +5,7 @@ import Career from "../pages/Career";
 import Root from "../layout/Root";
 import { Component } from "react";
 import Content from "../components/Main/homelayout/Content";
+import Homelayout from "../components/Main/homelayout/Homelayout";
 
 export const router = createBrowserRouter([
     {
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
                 element: <Home />,
                 children: [
                     {
-                        path: '/category/:id',
+                        path: '/news/:id',
                         element: <Content />,
                         loader: () => fetch("/news.json")
                     }

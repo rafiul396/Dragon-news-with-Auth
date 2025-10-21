@@ -4,9 +4,11 @@ import Newsbox from './Newsbox.jsx/Newsbox';
 
 const Categorynews = () => {
     const [news, setNews] = useState([])
-    const { id } = useParams();
+    const { id } = useParams();    
     const newsData = useLoaderData();
-    useEffect(() => {
+    console.log(newsData);
+    
+    useEffect(() => {        
         if (id == "0") {
             setNews(newsData);
             return
