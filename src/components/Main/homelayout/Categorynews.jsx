@@ -6,7 +6,6 @@ const Categorynews = () => {
     const [news, setNews] = useState([])
     const { id } = useParams();    
     const newsData = useLoaderData();
-    console.log(newsData);
     
     useEffect(() => {        
         if (id == "0") {
@@ -24,7 +23,7 @@ const Categorynews = () => {
     return (
         <div>
             <h2 className='text-primary font-semibold mb-4'>Dragon News Home</h2>
-            <div className='space-y-4 h-[500px] overflow-y-scroll'>
+            <div className='space-y-10'>
                 {
                     news.map(n => <Newsbox n={n} />)
                 }

@@ -5,6 +5,7 @@ import { Navigate } from 'react-router';
 const Home = () => {
     return (
         <Navigate to='/news/1'></Navigate>
+        // <h1>Hello Home</h1>
     );
 };
 
